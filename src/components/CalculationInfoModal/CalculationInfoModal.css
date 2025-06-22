@@ -80,7 +80,7 @@
   display: block;
   margin: 20px auto 0;
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: #4f0606; /* New color */
   color: white;
   border: none;
   border-radius: 5px;
@@ -89,5 +89,5 @@
 }
 
 .modal-understand-button:hover {
-  background-color: #0056b3;
+  background-color: #310404; /* Darker shade for hover */
 } 

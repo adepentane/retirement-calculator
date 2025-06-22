@@ -48,13 +48,14 @@
 }
 
 .how-calculated-link a {
-  color: #007bff;
+  color: #4f0606; /* New color */
   text-decoration: none;
   font-weight: 500;
 }
 
 .how-calculated-link a:hover {
   text-decoration: underline;
+  color: #310404; /* Darker shade for hover */
 }
 
 .view-toggle {
@@ -80,8 +81,8 @@
 }
 
 .view-toggle button.active {
-  color: #007bff; /* Blue for active tab text */
-  border-bottom-color: #007bff; /* Blue underline for active tab */
+  color: #4f0606; /* New color */
+  border-bottom-color: #4f0606; /* New color */
 }
 
 .graph-display-area {

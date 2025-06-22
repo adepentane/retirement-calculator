@@ -36,8 +36,8 @@
 
 .form-group input[type='number']:focus,
 .form-group input[type='text']:focus {
-  border-color: #007bff;
-  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25); /* Focus ring like Bootstrap */
+  border-color: #4f0606; /* New color */
+  box-shadow: 0 0 0 0.2rem rgba(79,6,6,.25); /* New color with adjusted alpha */
   outline: none;
 }
 
@@ -79,8 +79,8 @@
 }
 
 .form-group-inline .input-wrapper:focus-within {
-  border-color: #007bff;
-  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+  border-color: #4f0606; /* New color */
+  box-shadow: 0 0 0 0.2rem rgba(79,6,6,.25); /* New color with adjusted alpha */
 }
 
 
@@ -110,9 +110,9 @@
 }
 
 .toggle-buttons button.active {
-  background-color: #007bff;
+  background-color: #4f0606; /* New color */
   color: white;
-  border-color: #007bff; /* This might not be visible if borders are none */
+  /* border-color: #4f0606; Not needed due to background */
 }
 
 .help-text {
@@ -132,7 +132,7 @@
 .advanced-details-toggle button {
   background: none;
   border: none;
-  color: #007bff; 
+  color: #4f0606; /* New color */
   cursor: pointer;
   padding: 0; /* Remove padding */
   font-weight: 600; /* Bolder */
@@ -143,6 +143,7 @@
 
 .advanced-details-toggle button:hover {
     text-decoration: underline;
+    color: #310404; /* Darker shade for hover */
 }
 
 .advanced-details-fields {

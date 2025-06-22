@@ -42,7 +42,7 @@ function RetirementGraph({ savingsGrowthData, targetSavingsTrajectoryData, retir
     datasets.push({
       label: 'What you\'ll have',
       data: savingsGrowthData.map(dp => ({ x: dp.age, y: dp.value })),
-      borderColor: 'rgb(75, 192, 192)', // Teal/Greenish
+      borderColor: 'rgb(75, 192, 192)', // Keeping Teal/Greenish for this line
       backgroundColor: 'rgba(75, 192, 192, 0.2)',
       tension: 0.1,
       fill: true,
@@ -55,11 +55,11 @@ function RetirementGraph({ savingsGrowthData, targetSavingsTrajectoryData, retir
     datasets.push({
       label: 'What you\'ll need',
       data: targetSavingsTrajectoryData.map(dp => ({ x: dp.age, y: dp.value })),
-      borderColor: 'rgb(54, 162, 235)', // Blue
-      borderDash: [5, 5], // Dotted line
-      backgroundColor: 'rgba(54, 162, 235, 0.1)', // Lighter blue for area, optional
+      borderColor: '#4f0606', // New primary color
+      borderDash: [5, 5], 
+      backgroundColor: 'rgba(79, 6, 6, 0.1)', // Adjusted alpha for new color
       tension: 0.1,
-      fill: false, // In the screenshot, this line is not filled
+      fill: false, 
       pointRadius: 3,
       pointHoverRadius: 5,
     });
