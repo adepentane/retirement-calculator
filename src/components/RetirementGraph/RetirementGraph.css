@@ -1,0 +1,16 @@
+/* Styles for RetirementGraph component */
+.graph-container {
+  position: relative; /* Needed for chart.js responsiveness */
+  margin: auto;
+  height: 300px; /* Default height, can be adjusted */
+  width: 100%;   /* Default width */
+  /* border: 1px solid #eee; */ /* Optional border */
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Ensure canvas is responsive within the container */
+.graph-container canvas {
+  max-height: 100% !important; /* Override chart.js inline style if necessary */
+  max-width: 100% !important;
+} 

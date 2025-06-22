@@ -1,0 +1,93 @@
+/* Styles for CalculationInfoModal component */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Ensure it's on top */
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 600px; /* Max width for the modal */
+  max-height: 80vh; /* Max height */
+  overflow-y: auto; /* Scroll if content exceeds max height */
+  position: relative; /* For positioning the close button */
+  text-align: left;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  color: #333;
+  font-size: 1.6em;
+  margin-bottom: 15px;
+}
+
+.modal-content h4 {
+  color: #555;
+  font-size: 1.1em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.modal-content p, .modal-content ul {
+  color: #444;
+  font-size: 0.95em;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.modal-content ul {
+  padding-left: 20px;
+}
+
+.modal-content ul li {
+  margin-bottom: 8px;
+}
+
+.modal-content em {
+  font-style: italic;
+  color: #666;
+  font-size: 0.9em;
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 1.8em;
+  line-height: 1;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.modal-close-button:hover {
+  color: #333;
+}
+
+.modal-understand-button {
+  display: block;
+  margin: 20px auto 0;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.modal-understand-button:hover {
+  background-color: #0056b3;
+} 

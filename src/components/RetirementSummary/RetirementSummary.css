@@ -1,0 +1,177 @@
+/* Styles for RetirementSummary component */
+.retirement-summary {
+  padding: 0; /* Remove padding if panel has it */
+}
+
+.retirement-summary h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 1.15em; /* Adjusted size */
+  color: #333;
+  font-weight: 600; /* Bolder */
+  text-align: left; /* Ensure it is left aligned */
+}
+
+.summary-values {
+  display: flex;
+  justify-content: flex-start; /* Align to start, not space-between */
+  gap: 40px; /* Add gap between the two items */
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.summary-value-item {
+  flex: 0 0 auto; /* Don't grow, just take content size + gap */
+  text-align: left; 
+}
+
+.summary-value-item p {
+  margin: 0 0 4px 0;
+  font-size: 0.85em; /* Smaller label text */
+  color: #555;
+}
+
+.retirement-summary .amount {
+  font-size: 2em; /* Larger amount */
+  font-weight: 700; /* Bolder amount */
+  color: #222; /* Darker color for amount */
+  margin: 0;
+  line-height: 1.1;
+}
+
+.how-calculated-link {
+  font-size: 0.9em;
+  margin-top: 15px; /* Add some space above */
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.how-calculated-link a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.how-calculated-link a:hover {
+  text-decoration: underline;
+}
+
+.view-toggle {
+  margin-bottom: 20px;
+  border-bottom: 2px solid #e9ecef; /* Lighter border for the whole bar */
+  padding-bottom: 0; /* Remove padding, border acts as line */
+  display: flex; /* To align buttons */
+}
+
+.view-toggle button {
+  background: none;
+  border: none;
+  padding: 10px 15px; /* Adjust padding as needed */
+  padding-bottom: 12px; /* Extra padding to push border down */
+  cursor: pointer;
+  font-weight: 600; /* Bolder text for tabs */
+  font-size: 0.9em;
+  color: #6c757d; /* Grey for inactive tab */
+  border-bottom: 3px solid transparent; 
+  margin-right: 10px; 
+  position: relative; /* For the active indicator */
+  top: 2px; /* To align with the container's bottom border visually */
+}
+
+.view-toggle button.active {
+  color: #007bff; /* Blue for active tab text */
+  border-bottom-color: #007bff; /* Blue underline for active tab */
+}
+
+.graph-display-area {
+  margin-top: 20px; /* Space above graph */
+}
+
+/* Styles for Summary View Content */
+.summary-view-content {
+  padding: 10px 0;
+  text-align: left;
+  margin-top: 10px; /* Space above summary view details */
+}
+
+.summary-view-content h3 {
+  font-size: 1.2em; /* Slightly smaller */
+  color: #333;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  font-weight: 600;
+}
+
+.summary-view-content h4 {
+  font-size: 1.05em; /* Slightly smaller */
+  color: #444;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.summary-details-list, .summary-assumptions-list {
+  list-style: none;
+  padding: 0;
+}
+
+.summary-details-list li, .summary-assumptions-list li {
+  display: flex; 
+  justify-content: space-between; 
+  padding: 9px 0; /* Increased padding */
+  font-size: 0.9em; /* Slightly smaller */
+  border-bottom: 1px dotted #f0f0f0;
+}
+
+.summary-details-list li:last-child, .summary-assumptions-list li:last-child {
+  border-bottom: none;
+}
+
+.summary-details-list li span {
+  color: #555;
+}
+
+.summary-details-list li strong {
+  color: #333;
+  text-align: right;
+  font-weight: 500; /* Medium weight for values */
+}
+
+.summary-details-list li.separator {
+  border-bottom: 1px solid #ddd; 
+  margin: 10px 0;
+  padding: 0; 
+  height: 0; 
+}
+
+.summary-details-list li.on-track strong {
+  color: #28a745; 
+}
+
+.summary-details-list li.shortfall strong {
+  color: #dc3545; 
+}
+
+.summary-assumptions-list li {
+  justify-content: flex-start; 
+  gap: 10px; 
+}
+
+.summary-assumptions-list li strong {
+    text-align: left; 
+    font-weight: 500;
+}
+
+.graph-placeholder {
+  border: 1px dashed #ccc;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+  min-height: 200px; /* Give it some default height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fdfdfd;
+} 

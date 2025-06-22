@@ -1,0 +1,152 @@
+/* Styles for RetirementDetailsForm component */
+.retirement-details-form {
+  padding: 0; /* Remove padding if panel has it */
+}
+
+.retirement-details-form h2 {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 1.3em; /* Adjusted size */
+  color: #333;
+  font-weight: 600;
+}
+
+.form-group {
+  margin-bottom: 18px; /* Slightly more space */
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500; /* Medium weight */
+  font-size: 0.85em; /* Slightly smaller label */
+  color: #444; /* Darker grey for labels */
+}
+
+.form-group input[type='number'],
+.form-group input[type='text'] {
+  width: 100%; /* Full width within its container */
+  padding: 12px; /* More padding */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; 
+  font-size: 0.95em;
+  color: #333;
+}
+
+.form-group input[type='number']:focus,
+.form-group input[type='text']:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25); /* Focus ring like Bootstrap */
+  outline: none;
+}
+
+.form-group-inline {
+  display: flex;
+  align-items: center; 
+  gap: 0; /* Remove gap, buttons will be part of input visual */
+}
+
+.form-group-inline label {
+  /* Keeps styles from .form-group label */
+  margin-bottom: 6px; /* Align with other labels if stacked */
+}
+
+/* For inline label and input on same line (if structure changes) */
+.form-group-inline > label {
+    flex-basis: auto; /* Adjust as needed */
+    margin-right: 10px;
+    margin-bottom: 0; /* Remove bottom margin for inline labels */
+}
+
+.form-group-inline .input-wrapper {
+    display: flex; /* To combine input and toggle buttons */
+    flex-grow: 1;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden; /* To keep toggle buttons inside rounded corners */
+}
+
+.form-group-inline .input-wrapper input[type='number'] {
+  border: none; /* Remove individual border */
+  border-radius: 0; /* Remove individual radius */
+  flex-grow: 1;
+  padding-right: 5px; /* Space before toggle */
+}
+
+.form-group-inline .input-wrapper input[type='number']:focus {
+  box-shadow: none; /* Remove focus shadow when part of wrapper */
+}
+
+.form-group-inline .input-wrapper:focus-within {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+
+.toggle-buttons {
+  display: flex;
+  /* border: 1px solid #ccc; */ /* Border moved to wrapper */
+  /* border-left: none; */
+  /* border-radius: 0 4px 4px 0; */ /* Handled by wrapper */
+}
+
+.toggle-buttons button {
+  padding: 12px 10px; /* Match input padding */
+  border: none;
+  /* border-top: 1px solid #ccc; */
+  /* border-bottom: 1px solid #ccc; */
+  /* border-right: 1px solid #ccc; */
+  background-color: #e9ecef; /* Light grey for non-active */
+  color: #495057;
+  cursor: pointer;
+  font-size: 0.9em;
+  line-height: 1.5; /* Align text vertically */
+}
+
+/* To create the vertical separator line */
+.toggle-buttons button:first-child {
+  border-right: 1px solid #ccc;
+}
+
+.toggle-buttons button.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff; /* This might not be visible if borders are none */
+}
+
+.help-text {
+  display: block;
+  font-size: 0.8em;
+  color: #6c757d; /* Bootstrap muted color */
+  margin-top: 4px;
+  padding-left: 2px;
+}
+
+.advanced-details-toggle {
+    text-align: left; /* Align to left as per image */
+    margin-top: 25px; /* More space above */
+    margin-bottom: 15px;
+}
+
+.advanced-details-toggle button {
+  background: none;
+  border: none;
+  color: #007bff; 
+  cursor: pointer;
+  padding: 0; /* Remove padding */
+  font-weight: 600; /* Bolder */
+  text-transform: uppercase;
+  font-size: 0.85em;
+  letter-spacing: 0.5px; /* Slight spacing */
+}
+
+.advanced-details-toggle button:hover {
+    text-decoration: underline;
+}
+
+.advanced-details-fields {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #e0e0e0; /* Match panel border color */
+}
