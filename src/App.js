@@ -3,7 +3,7 @@ import './App.css';
 // We will create these components in the next steps
 import RetirementDetailsForm from './components/RetirementDetailsForm/RetirementDetailsForm';
 import RetirementSummary from './components/RetirementSummary/RetirementSummary';
-import AdvisorsMatch from './components/AdvisorsMatch/AdvisorsMatch';
+// import AdvisorsMatch from './components/AdvisorsMatch/AdvisorsMatch'; // Removed import
 import { calculateRetirementProjections } from './utils/calculations'; // Import the new function
 
 const initialFormState = {
@@ -121,7 +121,7 @@ function App() {
             savingsGrowthData={results.savingsGrowthData} 
             targetSavingsTrajectoryData={results.targetSavingsTrajectoryData} // Pass target trajectory data
           />
-          <AdvisorsMatch />
+          {/* <AdvisorsMatch /> */ /* Removed component instance */}
         </section>
       </main>
     </div>
